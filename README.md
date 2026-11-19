@@ -46,5 +46,5 @@ My prediction: It prints 1 and then 5.
 For `a`, `add()` makes `_items` 1, and the setter refuses -5 because it is negative, so it stays 1.
 For `b`, `BigBag.add()` calls `super.add()` two times, so each `add()` adds 2. After two calls `_items` is 4, then I add 1 to get 5.
 
-Real output:
-Was I right?
+Real output: 1 and 5 (printed on two lines)
+Was I right? Yes, my prediction was right: `a` stays at 1 because the setter refuses -5, and `b` reaches 5 because each `BigBag.add()` adds 2.
